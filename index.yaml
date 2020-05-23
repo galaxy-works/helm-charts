@@ -3,7 +3,7 @@ entries:
   cloudlaunch:
   - apiVersion: v1
     appVersion: 2.0.2
-    created: "2020-04-21T00:24:15.633443+05:30"
+    created: "2020-05-23T20:32:03.97419+05:30"
     dependencies:
     - name: cloudlaunchserver
       repository: https://raw.githubusercontent.com/CloudVE/helm-charts/master
@@ -17,7 +17,7 @@ entries:
     version: 0.3.0
   - apiVersion: v1
     appVersion: 2.0.2
-    created: "2020-04-21T00:24:15.61765+05:30"
+    created: "2020-05-23T20:32:03.963111+05:30"
     dependencies:
     - name: cloudlaunch-server
       repository: https://raw.githubusercontent.com/CloudVE/helm-charts/master
@@ -31,7 +31,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: 2.0.2
-    created: "2020-04-21T00:24:15.60273+05:30"
+    created: "2020-05-23T20:32:03.954459+05:30"
     dependencies:
     - name: cloudlaunch-server
       repository: https://raw.githubusercontent.com/CloudVE/helm-charts/master
@@ -46,7 +46,7 @@ entries:
   cloudlaunch-server:
   - apiVersion: v1
     appVersion: 2.0.2
-    created: "2020-04-21T00:24:15.656462+05:30"
+    created: "2020-05-23T20:32:03.987978+05:30"
     dependencies:
     - name: postgresql
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -64,7 +64,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: 2.0.2
-    created: "2020-04-21T00:24:15.644829+05:30"
+    created: "2020-05-23T20:32:03.980848+05:30"
     dependencies:
     - name: postgresql
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -83,7 +83,7 @@ entries:
   cloudlaunchserver:
   - apiVersion: v1
     appVersion: 2.0.2
-    created: "2020-04-21T00:24:15.671594+05:30"
+    created: "2020-05-23T20:32:03.994762+05:30"
     dependencies:
     - name: postgresql
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -102,7 +102,7 @@ entries:
   cloudman:
   - apiVersion: v1
     appVersion: 2.0.0
-    created: "2020-04-21T00:24:15.831905+05:30"
+    created: "2020-05-23T20:32:04.110805+05:30"
     dependencies:
     - name: cloudlaunch
       repository: https://raw.githubusercontent.com/CloudVE/helm-charts/master
@@ -125,7 +125,7 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: 2.0.0
-    created: "2020-04-21T00:24:15.797111+05:30"
+    created: "2020-05-23T20:32:04.076538+05:30"
     dependencies:
     - name: cloudlaunch
       repository: https://raw.githubusercontent.com/CloudVE/helm-charts/master
@@ -148,7 +148,7 @@ entries:
     version: 0.3.1
   - apiVersion: v1
     appVersion: 2.0.0
-    created: "2020-04-21T00:24:15.745352+05:30"
+    created: "2020-05-23T20:32:04.043747+05:30"
     dependencies:
     - name: cloudlaunch
       repository: https://raw.githubusercontent.com/CloudVE/helm-charts/master
@@ -167,7 +167,7 @@ entries:
     version: 0.3.0
   - apiVersion: v1
     appVersion: 2.0.0
-    created: "2020-04-21T00:24:15.719933+05:30"
+    created: "2020-05-23T20:32:04.028284+05:30"
     dependencies:
     - name: cloudlaunch
       repository: https://raw.githubusercontent.com/CloudVE/helm-charts/master
@@ -186,7 +186,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: 2.0.0
-    created: "2020-04-21T00:24:15.694051+05:30"
+    created: "2020-05-23T20:32:04.012523+05:30"
     dependencies:
     - name: cloudlaunch
       repository: https://raw.githubusercontent.com/CloudVE/helm-charts/master/
@@ -206,7 +206,23 @@ entries:
   galaxy:
   - apiVersion: v1
     appVersion: "20.01"
-    created: "2020-04-21T00:24:15.883348+05:30"
+    created: "2020-05-23T20:32:04.178933+05:30"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 8.1.4
+    description: Chart for Galaxy, an open, web-based platform for accessible, reproducible,
+      and transparent computational biomedical research.
+    digest: b44f13bac4e0293c52f274c488e106ce458abb295f2df76e9389fde5550a2c8f
+    icon: https://galaxyproject.org/images/galaxy-logos/galaxy_project_logo_square.png
+    name: galaxy
+    urls:
+    - https://raw.githubusercontent.com/galaxy-works/helm-charts/1.0.0/charts/galaxy-3.3.0.tgz
+    version: 3.3.0
+  - apiVersion: v1
+    appVersion: "20.01"
+    created: "2020-05-23T20:32:04.167286+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -222,7 +238,7 @@ entries:
     version: 3.2.0
   - apiVersion: v1
     appVersion: "19.09"
-    created: "2020-04-21T00:24:15.86983+05:30"
+    created: "2020-05-23T20:32:04.155306+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -238,7 +254,7 @@ entries:
     version: 3.1.1
   - apiVersion: v1
     appVersion: v19.09
-    created: "2020-04-21T00:24:15.857581+05:30"
+    created: "2020-05-23T20:32:04.141208+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -254,7 +270,7 @@ entries:
     version: 3.1.0
   - apiVersion: v1
     appVersion: v19.05
-    created: "2020-04-21T00:24:15.845327+05:30"
+    created: "2020-05-23T20:32:04.122205+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -271,7 +287,7 @@ entries:
   galaxy-cvmfs-csi:
   - apiVersion: v1
     appVersion: 1.0.1
-    created: "2020-04-21T00:24:15.887898+05:30"
+    created: "2020-05-23T20:32:04.182732+05:30"
     description: A Helm chart to deploy the CVMFS-CSI Plugin with a pre-built configuration
       for Galaxy repositories
     digest: f739ce727f8bffaff77622a6e3ebcafbc07643204a6072bc5a3cca809f4be695
@@ -281,7 +297,7 @@ entries:
     version: 1.3.0
   - apiVersion: v1
     appVersion: 1.0.1
-    created: "2020-04-21T00:24:15.886516+05:30"
+    created: "2020-05-23T20:32:04.181538+05:30"
     description: A Helm chart to deploy the CVMFS-CSI Plugin with a pre-built configuration
       for Galaxy repositories
     digest: 442684e7e912301e774cdd6376e249da443e488fdc6b6c0bec42e05c694330f6
@@ -291,7 +307,7 @@ entries:
     version: 1.1.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-04-21T00:24:15.88484+05:30"
+    created: "2020-05-23T20:32:04.180253+05:30"
     description: A Helm chart to deploy the CVMFS-CSI Plugin with a pre-built configuration
       for Galaxy repositories
     digest: a4648dedfa70623b37ed6ea1fe332500149e17d87ce772315e484944ec2aa6b2
@@ -302,7 +318,7 @@ entries:
   galaxy-stable:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-04-21T00:24:15.891605+05:30"
+    created: "2020-05-23T20:32:04.184968+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -318,7 +334,7 @@ entries:
   postgresql:
   - apiVersion: v1
     appVersion: 10.7.0
-    created: "2020-04-21T00:24:15.894452+05:30"
+    created: "2020-05-23T20:32:04.187091+05:30"
     description: Chart for PostgreSQL, an object-relational database management system
       (ORDBMS) with an emphasis on extensibility and on standards-compliance.
     digest: 9fe4d7a1533308c051750571254b00aaaaed7926906508ad9887d6473d8bc5fb
@@ -345,7 +361,7 @@ entries:
   prometheus:
   - apiVersion: v1
     appVersion: 2.2.1
-    created: "2020-04-21T00:24:15.899041+05:30"
+    created: "2020-05-23T20:32:04.192266+05:30"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -373,7 +389,7 @@ entries:
   pulsar:
   - apiVersion: v1
     appVersion: 0.9.0
-    created: "2020-04-21T00:24:15.899736+05:30"
+    created: "2020-05-23T20:32:04.194423+05:30"
     description: A Python server application that allows a Galaxy server to run jobs
       on remote systems without requiring a shared mounted file systems.
     digest: 8ec38223bc87e203c5b8ceb03912f9fc7ebba17e8f859cf03e8b4a47ae733408
@@ -381,4 +397,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/galaxy-works/helm-charts/1.0.0/charts/pulsar-0.1.0.tgz
     version: 0.1.0
-generated: "2020-04-21T00:24:15.586595+05:30"
+generated: "2020-05-23T20:32:03.936515+05:30"
